@@ -42,4 +42,35 @@
         <property name="currentAnimal" ref="frogge"/>
     </bean>
 
+
+    <bean id ="sourCreamBean" class="ru.anikeeva.weeknumberone.nighteatup.MilkProducts">
+        <constructor-arg index="0" value="Сметана"/>
+        <constructor-arg index="1" value="20"/>
+    </bean>
+
+    <bean id="yogurtBean" class="ru.anikeeva.weeknumberone.nighteatup.MilkProducts">
+        <constructor-arg index="0" value="Йогурт"/>
+        <constructor-arg index="1" value="2.9"/>
+    </bean>
+
+    <bean id="olivesBean" class="ru.anikeeva.weeknumberone.nighteatup.VegetableProducts">
+        <constructor-arg index="0" value="Оливки"/>
+        <constructor-arg index="1" value="Олива"/>
+    </bean>
+
+    <bean id="coconutBean" class="ru.anikeeva.weeknumberone.nighteatup.VegetableProducts">
+        <constructor-arg index="0" value="Кокосы"/>
+        <constructor-arg index="1" value="Пальма"/>
+    </bean>
+
+    <bean id="fridgeBean" class="ru.anikeeva.weeknumberone.nighteatup.Fridge">
+        <property name="productsList">
+            <list>
+                <ref bean="sourCreamBean"/>
+                <ref bean="yogurtBean"/>
+                <ref bean="olivesBean"/>
+                <ref bean="coconutBean"/>
+            </list>
+        </property>
+    </bean>
 </beans>
