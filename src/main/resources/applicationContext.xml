@@ -73,4 +73,21 @@
             </list>
         </property>
     </bean>
+
+
+    <bean id="headBean" class="ru.anikeeva.weeknumberone.hydraheads.Head" scope="prototype">
+        <constructor-arg index="0" value="2"/>
+        <constructor-arg index="1" value="6"/>
+    </bean>
+
+    <bean id="hydraBean" class="ru.anikeeva.weeknumberone.hydraheads.Hydra">
+        <property name="name" value="Гидра"/>
+        <property name="listOfHeads">
+            <list>
+                <ref bean="headBean"/>
+                <ref bean="headBean"/>
+                <ref bean="headBean"/>
+            </list>
+        </property>
+    </bean>
 </beans>
