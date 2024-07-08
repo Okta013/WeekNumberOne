@@ -26,4 +26,17 @@
     </bean>
 
 
+    <bean id = "frogge" class = "ru.anikeeva.weeknumberone.huntingseason.Frog">
+        <constructor-arg value="Frogge"/>
+    </bean>
+
+    <bean id = "goatee" class = "ru.anikeeva.weeknumberone.huntingseason.Goat">
+        <constructor-arg value="Goatee"/>
+    </bean>
+
+    <bean id = "goossee" class = "ru.anikeeva.weeknumberone.huntingseason.Goosse">
+        <constructor-arg value="Goossee"/>
+    </bean>
+
+
 </beans>
