@@ -3,8 +3,8 @@ package ru.anikeeva.weeknumberone.huntingseason;
 public class Hunter {
     private Animal currentAnimal;
 
-    public void setCurrentAnimal(Animal animal) {
-        this.currentAnimal = animal;
+    public void setCurrentAnimal(Animal currentAnimal) {
+        this.currentAnimal = currentAnimal;
     }
 
     public void killAnimal() {
